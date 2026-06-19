@@ -3,20 +3,22 @@ import 'package:provider/provider.dart';
 import 'providers/ride_provider.dart';
 import 'screens/request_ride_screen.dart';
 
+/// Entry point of the application.
 void main() {
   runApp(const RideApp());
 }
 
-/// Root widget. Wraps the whole tree with [RideProvider] so any
-/// descendant can read or watch ride state.
+/// Root widget of the app.
+/// 
+/// Wraps the entire widget tree with [ChangeNotifierProvider]
+/// so any descendant can access [RideProvider].
 class RideApp extends StatelessWidget {
   const RideApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      // Create the provider at the top level; it will be disposed
-      // automatically when the app is removed from the widget tree.
+      // Creates one shared RideProvider instance for the whole app
       create: (_) => RideProvider(),
       child: MaterialApp(
         title: 'Ride App',
@@ -29,6 +31,8 @@ class RideApp extends StatelessWidget {
             surfaceTintColor: Colors.transparent,
           ),
         ),
+
+        // First screen shown when app launches
         home: const RequestRideScreen(),
       ),
     );
