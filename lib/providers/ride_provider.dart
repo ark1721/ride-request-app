@@ -49,8 +49,10 @@ class RideProvider extends ChangeNotifier {
          // Extract the RideOffer from results
         rideOffer = results[0] as RideOffer;
     } catch (e) {
-       // Store error message to display in UI
-      errorMessage = 'Failed to fetch ride offer. Please try again.';
+       // Store error message to display in UIcatch (e) {
+  // Print real error to console
+  print('ERROR: $e');
+  errorMessage = 'Failed to fetch ride offer. Please try again.';
     } finally {
       // Always stop loading whether success or failure
       isLoading = false;

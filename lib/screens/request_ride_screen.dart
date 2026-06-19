@@ -17,13 +17,13 @@ class RequestRideScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Request a Ride')),
-      body: Padding(
+      body: Padding( 
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
             // Fake map placeholder — replace with GoogleMap in production
             Container(
-              height: 200,
+              height: 350,
               color: Colors.grey[300],
               child: const Center(child: Text('Map Here')),
             ),
@@ -38,7 +38,7 @@ class RequestRideScreen extends StatelessWidget {
               decoration: const InputDecoration(labelText: 'Dropoff Location'),
             ),
 
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
 
             // Find Ride button — shows spinner while loading
             // Disabled while loading to prevent duplicate requests
