@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   provider: ^6.0.5
-  http: ^0.15.0
+  http: ^1.2.1
   cupertino_icons: ^1.0.6
 
 dev_dependencies:
