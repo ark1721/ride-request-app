@@ -24,10 +24,10 @@ class RiderServicesApi {
     }
 // API call succeeded — return a fake ride offer
      return RideOffer.fromJson({
-      'vehicle_type': 'Sedan',
-      'driver_name': 'John Doe',
-      'fare': 15,
-      'eta_minutes': 5, 
+      'vehicle_type': 'Bike',
+      'driver_name': 'Ahmed Raza',
+      'fare': 180,
+      'eta_minutes': 4, 
     }); 
   }
 }

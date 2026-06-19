@@ -58,7 +58,7 @@ class RequestRideScreen extends StatelessWidget {
                 children: [
                   Text('Driver: ${provider.rideOffer!.driverName}'),
                   Text('Vehicle: ${provider.rideOffer!.vehicleType}'),
-                  Text('Fare: \$${provider.rideOffer!.fare}'),
+                  Text('Fare: ${provider.rideOffer!.fare} PKR'),
                   Text('ETA: ${provider.rideOffer!.etaMinutes} mins'),
                 ],
               ),
