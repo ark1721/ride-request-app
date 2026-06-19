@@ -24,7 +24,7 @@ class RequestRideScreen extends StatelessWidget {
             // Fake map placeholder — replace with GoogleMap in production
             Container(
               height: 350,
-              color: Colors.grey[300],
+              color: Colors.grey[200],
               child: const Center(child: Text('Map Here')),
             ),
             // Pickup location input field
